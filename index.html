@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasnim Khalil - Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <span class="logo">TK</span>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="gradient-text">Tasnim Khalil</span></h1>
+                <h2>Data Science & ML Engineering Student</h2>
+                <p>5th year Computer Engineering student at ESPRIT, currently on exchange at Université Laval</p>
+                <p class="status">🎯 Seeking 6-month internship in AI/ML starting January 2026</p>
+                <div class="hero-buttons">
+                    <a href="CV_Tasnim_Khalil_EN.pdf" class="btn btn-primary" download>Download CV (EN)</a>
+                    <a href="CV_Tasnim_Khalil_FR.pdf" class="btn btn-secondary" download>Télécharger CV (FR)</a>
+                    <a href="https://linkedin.com/in/tasnim-khelil-789859255" class="btn btn-outline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Passionate Data Science student with hands-on experience in Machine Learning, Deep Learning, and MLOps. 
+                   Currently pursuing my engineering degree with a specialization in Data Science, complemented by an 
+                   exchange semester at Université Laval in Quebec.</p>
+                <p>My recent work includes developing ML pipelines achieving 89% accuracy for medical predictions, 
+                   optimizing scheduling algorithms with 12% performance improvements, and building production-ready 
+                   MLOps architectures.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>89%</h3>
+                        <p>ML Model Accuracy</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🔬 IVF Patient Response Prediction</h3>
+                        <span class="project-badge">MLOps</span>
+                    </div>
+                    <p>Complete ML pipeline achieving 89% accuracy for patient stratification with explainable AI</p>
+                    <ul class="project-features">
+                        <li>Automated medical PDF data extraction</li>
+                        <li>Interpretable probabilistic model with SHAP/LIME</li>
+                        <li>REST API deployment with FastAPI & Streamlit</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>SHAP</span>
+                        <span>Random Forest</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>⚙️ Job-Shop Scheduling Optimization</h3>
+                        <span class="project-badge">AI Research</span>
+                    </div>
+                    <p>Hybrid ML approach improving makespan by 2-12% using domain-specific features</p>
+                    <ul class="project-features">
+                        <li>Java-Python hybrid pipeline</li>
+                        <li>Covariate shift analysis for robustness</li>
+                        <li>Real-time inference via ONNX Runtime</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Choco Solver</span>
+                        <span>ONNX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>☸️ Kubernetes Microservices</h3>
+                        <span class="project-badge">DevOps</span>
+                    </div>
+                    <p>Production-ready microservices architecture with intelligent routing and high availability</p>
+                    <ul class="project-features">
+                        <li>Gateway, logic-api, feedback-api services</li>
+                        <li>Ingress routing with load balancing</li>
+                        <li>SQLite persistence & health checks</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                        <span>Ingress</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🤖 AI Pacman Agent</h3>
+                        <span class="project-badge">Reinforcement Learning</span>
+                    </div>
+                    <p>Automatic heuristic learning for search algorithms with MCTS integration</p>
+                    <ul class="project-features">
+                        <li>Regression and decision tree models</li>
+                        <li>A* and MCTS algorithm optimization</li>
+                        <li>Near-optimal solution finding</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>A*</span>
+                        <span>MCTS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>📊 MarketMind Analytics</h3>
+                        <span class="project-badge">NLP</span>
+                    </div>
+                    <p>Intelligent customer review analysis with multimodal content generation</p>
+                    <ul class="project-features">
+                        <li>Sentiment analysis & classification</li>
+                        <li>RAG-based recommendations</li>
+                        <li>BERT/GPT integration</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Hugging Face</span>
+                        <span>NLP</span>
+                        <span>LLMs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>📈 Customer Churn Prediction</h3>
+                        <span class="project-badge">MLOps</span>
+                    </div>
+                    <p>End-to-end MLOps pipeline with CI/CD and production monitoring</p>
+                    <ul class="project-features">
+                        <li>Model versioning with MLFlow</li>
+                        <li>A/B testing framework</li>
+                        <li>Real-time API deployment</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>MLFlow</span>
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🐍 Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>R</span>
+                        <span>SQL</span>
+                        <span>Java</span>
+                        <span>C/C++</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🤖 ML/DL</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>scikit-learn</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>SHAP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>📚 NLP</h3>
+                    <div class="skill-tags">
+                        <span>BERT</span>
+                        <span>GPT</span>
+                        <span>T5</span>
+                        <span>RAG</span>
+                        <span>NER</span>
+                        <span>Embeddings</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>⚡ MLOps/DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>MLFlow</span>
+                        <span>Jenkins</span>
+                        <span>FastAPI</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>I'm actively looking for internship opportunities in AI/ML. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:tasnimkhelil24@gmail.com" class="contact-link">
+                    📧 tasnimkhelil24@gmail.com
+                </a>
+                <a href="tel:+14189314982" class="contact-link">
+                    📱 +1 418 931 4982
+                </a>
+                <a href="https://linkedin.com/in/tasnim-khelil-789859255" class="contact-link">
+                    💼 LinkedIn
+                </a>
+                <a href="https://github.com/tasnim-khalil" class="contact-link">
+                    🐙 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tasnim Khalil. Built with ❤️ and hosted on GitHub Pages</p>
+        </div>
+    </footer>
+</body>
+</html>
