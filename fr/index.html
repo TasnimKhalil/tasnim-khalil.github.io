@@ -25,6 +25,11 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <a href="../en/index.html" class="lang-switch">🇬🇧 EN</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <button class="theme-toggle" id="theme-toggle">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -42,7 +47,7 @@
                     <span class="typed-text">Étudiante en Data Science & ML Engineering</span>
                 </h2>
                 <p class="hero-description">
-                    5e année en génie informatique à ESPRIT, actuellement en échange à l'Université Laval.
+                    5e année en ingénierie informatique à ESPRIT, actuellement en échange à l'Université Laval.
                     Passionnée par la création de solutions IA qui ont un impact réel.
                 </p>
                 <div class="hero-status">
@@ -127,7 +132,7 @@
                             <div>
                                 <h4>Certifications</h4>
                                 <p>NVIDIA Deep Learning</p>
-                                <p>Spécialisation ML</p>
+                                <p>Anomaly Detection AI</p>
                             </div>
                         </div>
                     </div>
@@ -164,35 +169,52 @@
                 <div class="timeline-item">
                     <div class="timeline-date">Juin 2025 - Août 2025</div>
                     <div class="timeline-content">
-                        <h3>Analyste de Données Stagiaire</h3>
+                        <h3>Stagiaire Analyste de Données</h3>
                         <h4>Banque Internationale Arabe de Tunisie (BIAT)</h4>
                         <ul>
-                            <li>Automatisation de l'extraction de données financières à partir de PDF avec OCR et Python</li>
+                            <li>Automatisation de l'extraction de données financières à partir de PDF (OCR + scripts Python)</li>
+                            <li>Nettoyage, consolidation et préparation de rapports Excel automatisés</li>
                             <li>Création de tableaux de bord Power BI pour la prise de décision exécutive</li>
-                            <li>Développement d'algorithmes de segmentation client améliorant le ciblage de 35%</li>
+                            <li>Développement d'algorithmes de segmentation client basés sur le comportement transactionnel (amélioration du ciblage de 35%)</li>
                         </ul>
                         <div class="timeline-tech">
                             <span>Python</span>
                             <span>Power BI</span>
                             <span>OCR</span>
                             <span>SQL</span>
+                            <span>Excel</span>
                         </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">Juin 2024 - Juillet 2024</div>
                     <div class="timeline-content">
-                        <h3>Analyste de Données d'Affaires</h3>
+                        <h3>Analyste de Données Métiers</h3>
                         <h4>Compagnie des Phosphates de Gafsa (CPG)</h4>
                         <ul>
-                            <li>Analyse et optimisation des processus internes réduisant les coûts de 20%</li>
+                            <li>Analyse et optimisation des processus internes (réduction des coûts de 20%)</li>
+                            <li>Valorisation des données pour la prise de décision stratégique</li>
                             <li>Construction de modèles prédictifs pour l'optimisation de la production</li>
-                            <li>Mise en œuvre de stratégies de valorisation des données pour les décisions stratégiques</li>
                         </ul>
                         <div class="timeline-tech">
                             <span>Analyse de Données</span>
                             <span>Modélisation Prédictive</span>
                             <span>Optimisation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Août 2022 - Septembre 2022</div>
+                    <div class="timeline-content">
+                        <h3>Assistante Informatique</h3>
+                        <h4>Genius Soft</h4>
+                        <ul>
+                            <li>Administration et optimisation de systèmes informatiques</li>
+                            <li>Support technique et accompagnement des utilisateurs</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Administration Système</span>
+                            <span>Support IT</span>
                         </div>
                     </div>
                 </div>
@@ -204,57 +226,172 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">
-                <span class="section-number">03.</span> Projets Phares
+                <span class="section-number">03.</span> Projets Académiques & Personnels
             </h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="research">Recherche</button>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card">
+                <!-- Projet 1: IVF -->
+                <div class="project-card" data-category="ml">
                     <div class="project-icon">
                         <i class="fas fa-microscope"></i>
                     </div>
-                    <h3>Prédiction de Réponse FIV</h3>
-                    <p>Pipeline ML atteignant 89% de précision pour la stratification des patients avec IA explicable (SHAP/LIME). 
-                       Inclut l'extraction automatisée de PDF médicaux et le déploiement d'API en temps réel.</p>
+                    <h3>Système de Prédiction FIV</h3>
+                    <p>Pipeline ML complet atteignant 89% de précision pour la stratification des patients avec IA explicable (SHAP/LIME). Extraction automatisée de PDF médicaux et déploiement d'API en temps réel.</p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>FastAPI</span>
                         <span>SHAP</span>
                         <span>Random Forest</span>
+                        <span>Streamlit</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- Projet 2: Job-Shop -->
+                <div class="project-card" data-category="research">
                     <div class="project-icon">
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3>Optimisation Job-Shop</h3>
-                    <p>Approche ML hybride améliorant le makespan de 2-12% avec des features spécifiques au domaine. 
-                       Analyse du covariate shift pour la robustesse en recherche profonde.</p>
+                    <p>Approche ML hybride améliorant le makespan de 2-12% avec features spécifiques au domaine. Pipeline Java/Python avec analyse du covariate shift pour la robustesse.</p>
                     <div class="project-tech">
                         <span>Java</span>
                         <span>Python</span>
                         <span>Choco Solver</span>
-                        <span>ONNX</span>
+                        <span>ONNX Runtime</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- Projet 3: Kubernetes -->
+                <div class="project-card" data-category="devops">
                     <div class="project-icon">
                         <i class="fas fa-ship"></i>
                     </div>
-                    <h3>Microservices Kubernetes</h3>
-                    <p>Architecture microservices prête pour la production avec routage Ingress intelligent, 
-                       haute disponibilité (2 répliques) et persistance SQLite.</p>
+                    <h3>Orchestration Kubernetes</h3>
+                    <p>Architecture microservices prête pour la production avec routage Ingress intelligent, haute disponibilité (2 répliques) et persistance SQLite.</p>
                     <div class="project-tech">
                         <span>Kubernetes</span>
                         <span>Docker</span>
                         <span>Ingress</span>
-                        <span>DevOps</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+
+                <!-- Projet 4: Pacman -->
+                <div class="project-card" data-category="ml research">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Agent IA Pacman</h3>
+                    <p>Apprentissage automatique d'heuristiques pour algorithmes de recherche. Intégration A* et MCTS avec régression et arbres de décision pour solutions quasi-optimales.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>A*</span>
+                        <span>MCTS</span>
+                    </div>
+                </div>
+
+                <!-- Projet 5: MarketMind -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>MarketMind Analytics</h3>
+                    <p>Pipeline d'analyse de sentiments et classification thématique avec génération multimodale. Recommandations basées sur RAG et embeddings sémantiques.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Hugging Face</span>
+                        <span>BERT</span>
+                        <span>GPT</span>
+                        <span>RAG</span>
+                    </div>
+                </div>
+
+                <!-- Projet 6: Churn -->
+                <div class="project-card" data-category="ml devops">
+                    <div class="project-icon">
+                        <i class="fas fa-user-slash"></i>
+                    </div>
+                    <h3>Prédiction Churn Client</h3>
+                    <p>Architecture MLOps complète avec CI/CD, versioning et monitoring via MLFlow. Tests A/B et optimisation continue en production avec API REST haute performance.</p>
+                    <div class="project-tech">
+                        <span>MLFlow</span>
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+
+                <!-- Projet 7: Voice Classification -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Classification Vocale</h3>
+                    <p>Conversion audio vers spectrogrammes avec extraction de features acoustiques avancées. Modèle ResNet optimisé avec amélioration de précision de +15%.</p>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>Librosa</span>
+                        <span>ResNet</span>
+                        <span>Augmentation</span>
+                    </div>
+                </div>
+
+                <!-- Projet 8: E-learning -->
+                <div class="project-card" data-category="web">
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Plateforme E-learning</h3>
+                    <p>Système de gestion de cours en ligne avec authentification multi-rôles et interface responsive. Architecture MVC avec API RESTful et intégration paiement.</p>
+                    <div class="project-tech">
+                        <span>JavaFX</span>
+                        <span>Symfony</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Projet 9: Mental Health -->
+                <div class="project-card" data-category="web">
+                    <div class="project-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Application Santé Mentale</h3>
+                    <p>Site web de sensibilisation avec ressources interactives et questionnaires d'auto-évaluation. Design responsive avec optimisation SEO et intégration réseaux sociaux.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Projet 10: Event Management -->
+                <div class="project-card" data-category="web">
+                    <div class="project-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>App Gestion Événementielle</h3>
+                    <p>Application desktop multi-plateforme pour la gestion de participants et ressources. Interface graphique Qt moderne avec base de données locale et exports PDF/Excel.</p>
+                    <div class="project-tech">
+                        <span>Qt</span>
+                        <span>C++</span>
+                        <span>SQLite</span>
                     </div>
                 </div>
             </div>
+
             <div class="projects-more">
                 <a href="https://github.com/TasnimKhalil" class="btn btn-outline">
-                    Voir Plus de Projets <i class="fas fa-arrow-right"></i>
+                    Voir Mon GitHub <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -264,7 +401,7 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">
-                <span class="section-number">04.</span> Compétences & Technologies
+                <span class="section-number">04.</span> Compétences Techniques
             </h2>
             <div class="skills-container">
                 <div class="skill-category">
@@ -275,18 +412,28 @@
                         <div class="skill-item">SQL</div>
                         <div class="skill-item">Java</div>
                         <div class="skill-item">C/C++</div>
+                        <div class="skill-item">C#</div>
                         <div class="skill-item">TypeScript</div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> ML/DL</h3>
+                    <h3><i class="fas fa-database"></i> Data Science</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Pandas</div>
+                        <div class="skill-item">NumPy</div>
+                        <div class="skill-item">Scikit-learn</div>
+                        <div class="skill-item">Statistiques</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Deep Learning</h3>
                     <div class="skill-list">
                         <div class="skill-item">PyTorch</div>
                         <div class="skill-item">TensorFlow</div>
-                        <div class="skill-item">scikit-learn</div>
-                        <div class="skill-item">Pandas</div>
-                        <div class="skill-item">NumPy</div>
-                        <div class="skill-item">SHAP</div>
+                        <div class="skill-item">CNN</div>
+                        <div class="skill-item">ResNet</div>
+                        <div class="skill-item">Transformers</div>
+                        <div class="skill-item">LSTM</div>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -294,21 +441,32 @@
                     <div class="skill-list">
                         <div class="skill-item">BERT</div>
                         <div class="skill-item">GPT</div>
-                        <div class="skill-item">Transformers</div>
+                        <div class="skill-item">T5</div>
                         <div class="skill-item">RAG</div>
-                        <div class="skill-item">Embeddings</div>
                         <div class="skill-item">NER</div>
+                        <div class="skill-item">Embeddings</div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-rocket"></i> MLOps/DevOps</h3>
+                    <h3><i class="fas fa-rocket"></i> DevOps/MLOps</h3>
                     <div class="skill-list">
                         <div class="skill-item">Docker</div>
                         <div class="skill-item">Kubernetes</div>
                         <div class="skill-item">MLFlow</div>
                         <div class="skill-item">Jenkins</div>
-                        <div class="skill-item">FastAPI</div>
                         <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">FastAPI</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Big Data & Outils</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Hadoop</div>
+                        <div class="skill-item">Spark</div>
+                        <div class="skill-item">Cloudera</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Tableau</div>
+                        <div class="skill-item">Power BI</div>
                     </div>
                 </div>
             </div>
@@ -323,7 +481,7 @@
             </h2>
             <div class="contact-content">
                 <p class="contact-subtitle">
-                    Je recherche activement des opportunités de stage en IA/ML à partir de janvier 2026.
+                    Je recherche activement un stage de 6 mois en IA/ML à partir de janvier 2026.
                 </p>
                 <p class="contact-text">
                     Que vous ayez une opportunité, une question, ou que vous souhaitiez simplement échanger, 
@@ -336,10 +494,10 @@
                     <a href="tel:+14189314982" class="contact-item">
                         <i class="fas fa-phone"></i> +1 418 931 4982
                     </a>
-                    <a href="https://linkedin.com/in/tasnim-khelil-789859255" class="contact-item">
+                    <a href="https://linkedin.com/in/tasnim-khelil-789859255" class="contact-item" target="_blank">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="https://github.com/TasnimKhalil" class="contact-item">
+                    <a href="https://github.com/TasnimKhalil" class="contact-item" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
