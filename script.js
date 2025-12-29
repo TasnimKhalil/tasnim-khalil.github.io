@@ -130,7 +130,35 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+// Ajouter à votre script.js
 
+// Filtrage des projets
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+        
+        const filter = btn.getAttribute('data-filter');
+        
+        projectCards.forEach(card => {
+            if (filter === 'all') {
+                card.classList.remove('hidden');
+            } else {
+                const categories = card.getAttribute('data-category').split(' ');
+                if (categories.includes(filter)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            }
+        });
+    });
+});
 // Console Easter Egg
 console.log('%c👋 Hi there!', 'font-size: 24px; font-weight: bold; color: #64ffda;');
 console.log('%c🚀 Thanks for checking out my portfolio!', 'font-size: 16px; color: #8892b0;');
