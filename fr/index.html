@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasnim Khalil | Ingénieure ML & Data Scientist</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo">TK</a>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="../en/index.html" class="lang-switch">🇬🇧 EN</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <h1>Bonjour, je suis <span class="gradient">Tasnim Khalil</span></h1>
+            <h2>Étudiante en Data Science & ML Engineering</h2>
+            <p>5e année en génie informatique à ESPRIT, actuellement en échange à l'Université Laval</p>
+            <div class="status-badge">
+                🎯 À la recherche d'un stage de 6 mois en IA/ML (Janvier 2026)
+            </div>
+            <div class="hero-buttons">
+                <a href="../cv/CV_khalilTasnim_FR.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Télécharger CV
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Me contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section - TOUS VOS PROJETS -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+                <button class="filter-btn" data-filter="research">Recherche</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1: IVF -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <i class="fas fa-microscope"></i>
+                        <h3>Système de Prédiction FIV</h3>
+                        <span class="badge">MLOps</span>
+                    </div>
+                    <p>Pipeline ML complet (89% précision) pour la stratification des patients FIV avec IA explicable.</p>
+                    <ul class="features">
+                        <li>Extraction automatisée de PDF médicaux</li>
+                        <li>Modèle interprétable avec SHAP/LIME</li>
+                        <li>API REST avec FastAPI et Streamlit</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>SHAP</span>
+                        <span>Random Forest</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-small">Détails</a>
+                        <span class="status">Projet Privé</span>
+                    </div>
+                </div>
+
+                <!-- Projet 2: Job-Shop -->
+                <div class="project-card" data-category="research">
+                    <div class="project-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Optimisation Job-Shop</h3>
+                        <span class="badge">Recherche IA</span>
+                    </div>
+                    <p>Approche ML hybride améliorant le makespan de 2-12% avec features domain-specific.</p>
+                    <ul class="features">
+                        <li>Pipeline hybride Java/Python</li>
+                        <li>Analyse du covariate shift</li>
+                        <li>Inférence temps réel via ONNX</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Choco Solver</span>
+                        <span>ONNX</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="status">Projet Académique</span>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Kubernetes -->
+                <div class="project-card" data-category="devops">
+                    <div class="project-header">
+                        <i class="fas fa-ship"></i>
+                        <h3>Orchestration Kubernetes</h3>
+                        <span class="badge">DevOps</span>
+                    </div>
+                    <p>Architecture microservices avec haute disponibilité et routage intelligent.</p>
+                    <ul class="features">
+                        <li>Gateway, logic-api, feedback-api</li>
+                        <li>Ingress avec load balancing</li>
+                        <li>Persistance SQLite</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                        <span>Ingress</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="status">Projet Université Laval</span>
+                    </div>
+                </div>
+
+                <!-- Projet 4: Pacman -->
+                <div class="project-card" data-category="ml research">
+                    <div class="project-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Agent IA Pacman</h3>
+                        <span class="badge">RL</span>
+                    </div>
+                    <p>Apprentissage automatique d'heuristiques pour algorithmes de recherche.</p>
+                    <ul class="features">
+                        <li>Intégration A* et MCTS</li>
+                        <li>Régression et arbres de décision</li>
+                        <li>Solutions quasi-optimales</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>A*</span>
+                        <span>MCTS</span>
+                    </div>
+                </div>
+
+                <!-- Projet 5: MarketMind -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>MarketMind Analytics</h3>
+                        <span class="badge">NLP</span>
+                    </div>
+                    <p>Analyse intelligente d'avis clients avec génération de contenu multimodal.</p>
+                    <ul class="features">
+                        <li>Analyse de sentiments</li>
+                        <li>Recommandations RAG</li>
+                        <li>Intégration BERT/GPT</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Hugging Face</span>
+                        <span>LLMs</span>
+                    </div>
+                </div>
+
+                <!-- Projet 6: Churn -->
+                <div class="project-card" data-category="ml devops">
+                    <div class="project-header">
+                        <i class="fas fa-user-slash"></i>
+                        <h3>Prédiction du Churn</h3>
+                        <span class="badge">MLOps</span>
+                    </div>
+                    <p>Pipeline MLOps complet avec CI/CD et monitoring en production.</p>
+                    <ul class="features">
+                        <li>Versioning avec MLFlow</li>
+                        <li>Tests A/B</li>
+                        <li>API temps réel</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>MLFlow</span>
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                    </div>
+                </div>
+
+                <!-- Projet 7: Voice Classification -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Classification Vocale</h3>
+                        <span class="badge">Deep Learning</span>
+                    </div>
+                    <p>Modèle ResNet optimisé pour la classification audio avec +15% de précision.</p>
+                    <ul class="features">
+                        <li>Conversion spectrogrammes</li>
+                        <li>Extraction features acoustiques</li>
+                        <li>Augmentation temporelle</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>PyTorch</span>
+                        <span>Librosa</span>
+                        <span>ResNet</span>
+                    </div>
+                </div>
+
+                <!-- Projet 8: E-learning -->
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Plateforme E-learning</h3>
+                        <span class="badge">Full Stack</span>
+                    </div>
+                    <p>Système de gestion de cours en ligne avec authentification multi-rôles.</p>
+                    <ul class="features">
+                        <li>Architecture MVC</li>
+                        <li>API RESTful</li>
+                        <li>Paiement intégré</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>JavaFX</span>
+                        <span>Symfony</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Projet 9: Mental Health -->
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Site Santé Mentale</h3>
+                        <span class="badge">Web</span>
+                    </div>
+                    <p>Plateforme de sensibilisation avec ressources interactives.</p>
+                    <ul class="features">
+                        <li>Design responsive</li>
+                        <li>Questionnaires interactifs</li>
+                        <li>Optimisation SEO</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Projet 10: Event Management -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-header">
+                        <i class="fas fa-calendar"></i>
+                        <h3>Gestion Événementielle</h3>
+                        <span class="badge">Desktop</span>
+                    </div>
+                    <p>Application desktop pour la gestion d'événements et participants.</p>
+                    <ul class="features">
+                        <li>Interface Qt moderne</li>
+                        <li>Base de données locale</li>
+                        <li>Exports PDF/Excel</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Qt</span>
+                        <span>C++</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <p>Je recherche activement un stage de 6 mois en IA/ML à partir de janvier 2026</p>
+            <div class="contact-info">
+                <a href="mailto:tasnimkhelil24@gmail.com"><i class="fas fa-envelope"></i> tasnimkhelil24@gmail.com</a>
+                <a href="tel:+14189314982"><i class="fas fa-phone"></i> +1 418 931 4982</a>
+                <a href="https://linkedin.com/in/tasnim-khelil-789859255"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/TasnimKhalil"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
